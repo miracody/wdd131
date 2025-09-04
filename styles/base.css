@@ -47,6 +47,10 @@ nav a:hover{
     object-fit: cover;
 }
 
+course-title {
+    display: block;
+}
+
  h2 {
     position: relative;
     text-align: center;
