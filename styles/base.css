@@ -1,115 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: #000000;
-    padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-title {
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 1rem;
+}
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 7rem;
-    background-color: #004466;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav a:hover {
+  background-color: #94d2bd;
+  color: #001219;
 }
 
-.profile{
-    float: right;
-    max-width: 150px;
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #004466;
-    margin: 0 auto;
-    object-fit: cover;
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-course-title {
-    display: block;
-}
-
- h2 {
-    position: relative;
-    text-align: center;
-    background-color: #004466;
-    color: white;
-    padding: 0.8rem;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    text-align: justify;
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px #000000;
-  max-width: 800px;
-  margin: 0.5rem auto;
-  font-family: 'open sans', sans-serif;
-  color: #000000;
-}
-
-.card h3 {
-  width: 90%;
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-  color: white;
-  background-color: #004466;
-  background-size: auto;
-  position: relative;
-  padding: 0.8rem;
-  border-radius: 5px;
-  text-align: center;
-
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  max-width: 200px;
-  border-radius: 8px;
-  border: 3px solid #004466;
-  box-shadow: 0 2px 6px #000000;
-}
-
-.card p {
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  min-width: 100px;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #004466;
-    margin-top: 2rem;
-    font-size: 1rem;
-    color: white;
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
 }
