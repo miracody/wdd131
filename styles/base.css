@@ -1,10 +1,15 @@
+/* Base Reset and Typography */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
+  font-family: 'Robot sans', sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
 }
 
+/* Header Styling */
 header {
   background-color: #004080;
   color: white;
@@ -13,15 +18,20 @@ header {
 }
 
 #course-title {
-  display: block;
+  display: flex;
   font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: center;
+  flex-direction: column;
 }
 
+/* Navigation Styling */
 nav {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 7rem;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -36,31 +46,93 @@ nav a:hover {
   border-radius: 5px;
 }
 
+/* Main Layout */
 main {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding-left: 20px;
   display: grid;
   gap: 2rem;
+  grid-template-columns: 3fr 7fr;
+  margin-top: 20px;
+  text-align: left;
+
 }
 
 h1 {
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
 }
 
-.card {
+/* Card Sections */
+.card,
+.card2,
+.angola-info {
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: black;
 }
 
+/* Decorative Boxes (optional) */
+.box1,
+.box2 {
+  display: block;
+  height: 10px;
+  background-color: #004080;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+/* Images */
 .card img {
-  max-width: 100%;
+  max-width: 25%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
+.angola-info img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Web Dev Resources List */
+.card2 ul {
+  list-style-type: none;
+  padding: 0;
+  
+  
+}
+
+.card2 li {
+  margin-bottom: 0.5rem;
+  
+}
+
+.card2 a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card2 a:hover {
+  text-decoration: underline;
+}
+
+/* Angola Aside */
+.angola-info {
+  text-align: center;
+  color: black;
+  
+  
+}
+
+/* Footer Styling */
 footer {
   text-align: center;
   padding: 1rem;
