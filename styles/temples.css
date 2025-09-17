@@ -22,7 +22,7 @@ h1 {
 #menu-toggle {
   position: absolute;
   top: 0.5rem;
-  right: rem;
+  right: 0.5rem;
   font-size: 2rem;
   background: none;
   border: none;

@@ -1,55 +1,31 @@
-// JavaScript function to get the current year
-// Author: Adson Mettler do Nascimento
+// Footer: Current Year and Last Modified Date
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-// Function to get the current year
-function getCurrentYear() {
-    return new Date().getFullYear();
+// Static Weather Data (Metric Units for Angola)
+const temperature = 28; // °C
+const windSpeed = 10; // km/h
+
+// Wind Chill Calculation Function
+function calculateWindChill(t, v) {
+  return (
+    13.12 +
+    0.6215 * t -
+    11.37 * Math.pow(v, 0.16) +
+    0.3965 * t * Math.pow(v, 0.16)
+  ).toFixed(1);
 }
 
-// To update the copyright year in the footer
-document.addEventListener("DOMContentLoaded", function() {
-    var yearSpan = document.querySelector("#year span.highlight");
-    if (yearSpan) {
-		yearSpan.textContent = getCurrentYear();
-    }
-});
+// Display Wind Chill if Conditions Are Met
+const windChillElement = document.getElementById("windchill-factor");
+const temperatureElement = document.getElementById("temperature-info");
+const windSpeedElement = document.getElementById("wind-speed");
 
+temperatureElement.textContent = `${temperature} °C`;
+windSpeedElement.textContent = `${windSpeed} km/h`;
 
-// Function to get the last modified date of the document
-document.addEventListener("DOMContentLoaded", function() {
-    var lastModifiedDate = document.lastModified;
-
-    // Update the second paragraph in the footer with the last modified date
-    var modifiedParagraph = document.querySelector("footer p:nth-of-type(2)");
-    if (modifiedParagraph) {
-        modifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
-    }
-});
-
-
-// Windchill factor and Static variables for WEATHER
-// Author: Adson Mettler do Nascimento
-
-// Static values for temperature and wind speed
-var temperatureCelsiusValue = 9;
-var temperatureCelsiusElement = document.getElementById("temperature-info");
-temperatureCelsiusElement.textContent = temperatureCelsiusValue + "°C";
-var windSpeedKmhValue = 50;
-var windSpeedKmhElement = document.getElementById("wind-speed");
-windSpeedKmhElement.textContent = windSpeedKmhValue + " km/h";
-
-
-// Function to calculate windchill factor
-function calculateWindchill(temperatureCelsius, windSpeedKmh) {
-    return 13.12 + 0.6215 * temperatureCelsius - 11.37 * Math.pow(windSpeedKmh, 0.16) + 0.3965 * temperatureCelsius * Math.pow(windSpeedKmh, 0.16);
+if (temperature <= 10 && windSpeed > 4.8) {
+  windChillElement.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
+} else {
+  windChillElement.textContent = "N/A";
 }
-
-// Static values for temperature and wind speed
-var temperatureCelsius = 9;
-var windSpeedKmh = 50;
-
-// Calculate windchill factor
-var windchillFactor = calculateWindchill(temperatureCelsius, windSpeedKmh);
-
-var windchillElement = document.getElementById("windchill-factor");
-windchillElement.textContent = windchillFactor.toFixed(1) + "°C";
