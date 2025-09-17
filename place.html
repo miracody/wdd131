@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover Angola</title>
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place | Angola</title>
+    <meta name="author" content="Mirabel Nwanneka">
+    <meta name="description" content="This page is dedicated to design a page to use responsive images, and JavaScript functions">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Discover Angola</h1>
-    <picture>
-      <source srcset="images/angola-hero-small.webp" media="(max-width: 600px)">
-      <source srcset="images" alt="(max-width: 1024px)">
-      <img src="images/angola3.webp" alt="Angola landscape">
-    </picture>
-  </header>
-
-  <main>
-    <section class="weather">
-      <h2>Weather <span class="icon-wide">⛅</span></h2>
-      <p>Temperature: <span id="temp">24°C</span></p>
-      <p>Wind Speed: <span id="wind">12 km/h</span></p>
-      <p>Wind Chill: <span id="chill">Calculating...</span></p>
-    </section>
-    <!-- Add more sections like Culture, History, Cuisine, etc. -->
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    <header>
+        <h1>Angola</h1>
+        <nav>
+            <div class="image-logo">
+                <img src="images/angola-flag.jpg" alt="Flag of Alberta" width="150">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/angola-hero-large.jpg" media="(min-width: 500px)">
+                <img src="images/angola-hero-small.webp" alt="angola landscape" width="250" height="250">
+            </picture>
+        </div>
+        <div class="content-container">
+            <div class="flexbox-item-1">
+                <h2>Data</h2>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Area:</span>
+                        <span class="value">1,246,700 sq km</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Population:</span>
+                        <span class="value">39.3 million</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Capital:</span>
+                        <span class="value">Luanda</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Language:</span>
+                        <span class="value">Portugues</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Currency:</span>
+                        <span class="value">Kwanza</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Time Zone:</span>
+                        <span class="value">UTC -2</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Calling Code:</span>
+                        <span class="value">+244</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Internet: Unitel</span>
+                        <span class="value"><div class=".ao"></div></span>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbox-item-2">
+                <h2 class="after">Weather</h2>
+                <div class="image-weather">
+                    <img src="images/weather.svg" alt="weather icon" width="150">
+                </div>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Temperature:</span>
+                        <span id="temperature-info" class="value"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind:</span>
+                        <span id="wind-speed" class="value"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind Chill:</span>
+                        <span id="windchill-factor" class="value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <p>&copy; <span id="currentyear"></span> Mirabel Nwanneka | Angola</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
