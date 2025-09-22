@@ -53,7 +53,7 @@ const temples = [
   location: "Accra, Ghana",
   dedicated: "2004, January, 11",
   area: 17500,
-  imageUrl: "https://media.churchofjesuschrist.org/media/temples/accra-ghana-temple/accra-ghana-temple-lds-395861-wallpaper.jpg"
+  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-395861-wallpaper.jpg"
 },
 {
   templeName: "Johannesburg South Africa",
@@ -62,14 +62,14 @@ const temples = [
   area: 19000,
   imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-temple-lds-395862-wallpaper.jpg"
 },
-
 {
   templeName: "Abidjan Ivory Coast",
   location: "Abidjan, Côte d'Ivoire",
   dedicated: "2023, November, 19",
   area: 17000,
-  imageUrl: "https://media.churchofjesuschrist.org/media/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-lds-395860-wallpaper.jpg"
+  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/abidjan-ivory-coast/400x250/abidjan-ivory-coast-temple-lds-395860-wallpaper.jpg"
 }
+
 
 
 ];
