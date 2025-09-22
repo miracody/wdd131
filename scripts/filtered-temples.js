@@ -48,27 +48,29 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  {
-    templeName: "Luanda Angola",
-    location: "Luanda, Angola",
-    dedicated: "2023, October, 15",
-    area: 12000,
-    imageUrl: "https://your-image-url.jpg"
-  },
-  {
-    templeName: "Accra Ghana",
-    location: "Accra, Ghana",
-    dedicated: "2004, January, 11",
-    area: 17500,
-    imageUrl: "https://your-image-url.jpg"
-  },
-  {
-    templeName: "Kinshasa DRC",
-    location: "Kinshasa, Democratic Republic of Congo",
-    dedicated: "2019, April, 14",
-    area: 10000,
-    imageUrl: "https://your-image-url.jpg"
-  }
+ {
+  templeName: "Accra Ghana",
+  location: "Accra, Ghana",
+  dedicated: "2004, January, 11",
+  area: 17500,
+  imageUrl: "https://media.churchofjesuschrist.org/media/temples/accra-ghana-temple/accra-ghana-temple-lds-395861-wallpaper.jpg"
+},
+{
+  templeName: "Johannesburg South Africa",
+  location: "Johannesburg, South Africa",
+  dedicated: "1985, August, 24",
+  area: 19000,
+  imageUrl: "https://media.churchofjesuschrist.org/media/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-lds-395862-wallpaper.jpg"
+},
+{
+  templeName: "Abidjan Ivory Coast",
+  location: "Abidjan, Côte d'Ivoire",
+  dedicated: "2023, November, 19",
+  area: 17000,
+  imageUrl: "https://media.churchofjesuschrist.org/media/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-lds-395860-wallpaper.jpg"
+}
+
+
 ];
 
 function displayTemples(templeList) {
