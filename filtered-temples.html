@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="filtered-temples.css">
 
   <!-- JavaScript -->
-  <script src="scripts/filtered-temples.js"></script>
+  <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
@@ -26,11 +26,12 @@
     <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
     <nav id="main-nav">
       <ul>
-        <li><button onclick="filteredTemples('home')">Home</button></li>
-        <li><button onclick="filteredTemples('old')">Old</button></li>
-        <li><button onclick="filteredTemples('new')">New</button></li>
-        <li><button onclick="filteredTemples('large')">Large</button></li>
-        <li><button onclick="filteredTemples('small')">Small</button></li>
+        <button onclick="filterTemples('home')">Home</button>
+        <button onclick="filterTemples('old')">Old</button>
+        <button onclick="filterTemples('new')">New</button>
+        <button onclick="filterTemples('large')">Large</button>
+        <button onclick="filterTemples('small')">Small</button>
+
       </ul>
     </nav>
   </header>
