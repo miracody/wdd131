@@ -68,7 +68,7 @@ const temples = [
   dedicated: "2023, November, 19",
   area: 17000,
   imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/abidjan-ivory-coast/400x250/abidjan-ivory-coast-temple-lds-395860-wallpaper.jpg"
-}
+},
 
 
 
@@ -94,7 +94,7 @@ function displayTemples(templeList) {
   });
 }
 
-function filterTemples(criteria) {
+function filteredTemples(criteria) {
   let filtered = [];
 
   switch (criteria) {
@@ -121,5 +121,5 @@ function filterTemples(criteria) {
 displayTemples(temples);
 
 // Footer updates
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+  document.getElementById('currentyear').textContent = new Date().getFullYear();
+  document.getElementById('lastModified').textContent = document.lastModified;
