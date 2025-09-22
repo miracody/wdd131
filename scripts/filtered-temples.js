@@ -60,8 +60,9 @@ const temples = [
   location: "Johannesburg, South Africa",
   dedicated: "1985, August, 24",
   area: 19000,
-  imageUrl: "https://media.churchofjesuschrist.org/media/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-lds-395862-wallpaper.jpg"
+  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-temple-lds-395862-wallpaper.jpg"
 },
+
 {
   templeName: "Abidjan Ivory Coast",
   location: "Abidjan, Côte d'Ivoire",
