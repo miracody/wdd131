@@ -9,7 +9,7 @@ body {
 header {
   background-color: #4a148c;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ nav a {
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 2px;
   display: inline-block;
 }
 
@@ -38,7 +38,7 @@ nav a:hover {
 
 .temple-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
@@ -46,14 +46,14 @@ nav a:hover {
 .temple-card {
   background-color: white;
   border: 1px solid #ddd;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 8px;
 }
 
 .temple-card img {
-  width: 80%;
+  width: 60%;
   height: auto;
   border-radius: 4px;
 }
