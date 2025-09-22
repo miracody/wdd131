@@ -48,49 +48,29 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  {
-    templeName: "Accra Ghana",
-    location: "Accra, Ghana",
-    dedicated: "2004, January, 11",
-    area: 17500,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-395861-wallpaper.jpg"
-  },
-  {
-    templeName: "Johannesburg South Africa",
-    location: "Johannesburg, South Africa",
-    dedicated: "1985, August, 24",
-    area: 19000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-temple-lds-395862-wallpaper.jpg"
-  },
-  {
-    templeName: "Abidjan Ivory Coast",
-    location: "Abidjan, Côte d'Ivoire",
-    dedicated: "2023, November, 19",
-    area: 17000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/abidjan-ivory-coast/400x250/abidjan-ivory-coast-temple-lds-395860-wallpaper.jpg"
-  }
-
-  {
-  templeName: "San Diego California",
-  location: "San Diego, California, United States",
-  dedicated: "1993, April, 25",
-  area: 72000,
-  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-lds-758904-wallpaper.jpg"
+ {
+  templeName: "Abidjan Ivory Coast",
+  location: "Abidjan, Côte d'Ivoire",
+  dedicated: "2023, November, 19",
+  area: 17000,
+  imageUrl: "https://churchofjesuschrist.org/imgs/4fbff8f9b4d4bc10041f52b7de02d507c07a2d1c/full/1280%2C/0/default"
 },
 {
-  templeName: "Tokyo Japan",
-  location: "Tokyo, Japan",
-  dedicated: "1980, October, 27",
-  area: 52000,
-  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-temple-lds-758905-wallpaper.jpg"
+  templeName: "Accra Ghana",
+  location: "Accra, Ghana",
+  dedicated: "2004, January, 11",
+  area: 17500,
+  imageUrl: "https://www.churchofjesuschrist.org/imgs/ea817531789318cff9d81198cdc39923708b7b79/full/800%2C/0/default"
 },
 {
-  templeName: "Frankfurt Germany",
-  location: "Frankfurt, Germany",
-  dedicated: "1987, August, 28",
-  area: 44000,
-  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/frankfurt-germany/400x250/frankfurt-temple-lds-758906-wallpaper.jpg"
+  templeName: "Brasília Brazil",
+  location: "Brasília, Brazil",
+  dedicated: "2023, September, 17",
+  area: 28000,
+  imageUrl: "https://www.churchofjesuschrist.org/imgs/0132c2e2201511ee921aeeeeac1e35d90ce264aa/full/1280%2C/0/default"
 }
+
+
 
 ];
 
@@ -134,7 +114,6 @@ function filterTemples(criteria) {
       filtered = temples;
   }
 
-  displayTemples(filtered);
 }
 
 // Initial load
