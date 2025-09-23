@@ -53,10 +53,11 @@ nav a:hover {
 }
 
 .temple-card img {
-  width: 60%;
+  width: 100%;
   height: auto;
-  border-radius: 4px;
+  aspect-ratio: 16 / 9;
 }
+
 
 footer {
   background-color: #4a148c;

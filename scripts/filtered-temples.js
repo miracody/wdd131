@@ -56,18 +56,18 @@ const temples = [
   imageUrl: "https://churchofjesuschrist.org/imgs/4fbff8f9b4d4bc10041f52b7de02d507c07a2d1c/full/1280%2C/0/default"
 },
 {
-  templeName: "Accra Ghana",
-  location: "Accra, Ghana",
-  dedicated: "2004, January, 11",
-  area: 17500,
-  imageUrl: "https://www.churchofjesuschrist.org/imgs/ea817531789318cff9d81198cdc39923708b7b79/full/800%2C/0/default"
+  templeName: "Benin, Nigeria",
+  location: "Benin, Nigeria",
+  dedicated: "2025, May, 24",
+  area: 30700,
+  imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/benin-city-nigeria-temple/benin-city-nigeria-temple-58575-main.jpg"
 },
 {
-  templeName: "Brasília Brazil",
-  location: "Brasília, Brazil",
-  dedicated: "2023, September, 17",
-  area: 28000,
-  imageUrl: "https://www.churchofjesuschrist.org/imgs/0132c2e2201511ee921aeeeeac1e35d90ce264aa/full/1280%2C/0/default"
+  templeName: "Republic of Congo",
+  location: "Lubumbashi, Congo",
+  dedicated: "2027",
+  area: 16700,
+  imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/lubumbashi-democratic-republic-of-the-congo-temple/lubumbashi-democratic-republic-of-the-congo-temple-26994-main.jpg"
 }
 
 
@@ -114,10 +114,9 @@ function filterTemples(criteria) {
       filtered = temples;
   }
 
+  displayTemples(filtered); 
 }
 
-// Initial load
-displayTemples(temples);
 
 // Footer updates
 document.getElementById("currentyear").textContent = new Date().getFullYear();
