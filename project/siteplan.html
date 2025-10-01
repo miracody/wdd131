@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crochet Harmony</title>
-  <link rel="stylesheet" href="siteplan.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMIRA Global</title>
+  <link rel="stylesheet" href="siteplan.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="image/romiralogo.jpg" alt="Romira Global Loja do Fios" />
+    <img src="images/romiralogo.jpg" alt="Romira Global Logo">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Shop">Shop</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- Home Section -->
+    <section id="Home" class="hero">
       <h1>Welcome to ROMIRA Global</h1>
       <p>Your Satisfaction Is Our Priority</p>
+      <video controls poster="images/romiraclip.mp4">
+      <source src="images/romiraclip.mp4" type="video/mp4">
+     </video>
+>
     </section>
 
-    <section class="featured-products">
+    <!-- Shop Section -->
+    <section id="shop" class="featured-products">
       <h2>Featured Items</h2>
-      <div class="Our products">
-        <img src="images/classicbag.jpg" alt="Bag yarns">
-        <h3>Bag yarns</h3>
-        <p>Made with natural cotton yarn. Perfect for market days.</p>
+
+      <div class="product-card">
+        <img src="images/classicbag.jpg" alt="Classic Bag">
+        <h3>Classic Bag</h3>
+        <p>Natural cotton yarn, perfect for market days.</p>
         <p class="price">$18.00</p>
         <button>Add to Cart</button>
-     </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cowyarn.jpg" alt="Baby Blanket">
+        <h3>Baby Blanket</h3>
+        <p>Soft pastel yarn, ideal for newborns.</p>
+        <p class="price">$25.00</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/floffy.jpg" alt="Yarn Bundle">
+        <h3>Yarn Bundle</h3>
+        <p>Mixed colors for creative projects.</p>
+        <p class="price">$12.00</p>
+        <button>Add to Cart</button>
+      </div>
     </section>
 
-    <section class="about">
-      <h2>About Us</h2>
-      <p>Romira Global is a crochet supplies enterprise birthed from core passion for creativity in the world of fabric art,
-         we take priority in supplying quality crochet materials ranging from yarns,hooks, accessories for various art project. </p>
-    </section>
+    <section id="scenarios" class="scenarios">
+        <h2>What Our Visitors Ask</h2>
+        <ul>
+            <li><strong>Where can I find high-quality yarns for my crochet business?</strong><br>
+                Explore our shop for premium yarns, hooks, and accessories tailored for artisans and creators.</li>
+
+            <li><strong>How do I place a custom order or contact ROMIRA Global?</strong><br>
+                Visit our contact section to send us a message or request a personalized crochet item.</li>
+
+            <li><strong>Do you ship internationally?</strong><br>
+                Yes! We’re proud to share Angolan craftsmanship with the world. Shipping details are available at checkout.</li>
+        </ul>
+  </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Romira Global. All rights reserved.</p>
+    <p>&copy; 2025 ROMIRA Global. All rights reserved.</p>
   </footer>
 </body>
 </html>
