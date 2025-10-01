@@ -1,0 +1,89 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #8e44ad;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #732d91;
+}
+
+.site-footer {
+  background-color: #8e44ad;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 4px solid #732d91;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fdf6f0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #732d91;
+}
+
+span {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+input[type="radio"]:checked + span {
+  color: #f5b301;
+}
+
+
+footer {
+  background-color: #732d91;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
