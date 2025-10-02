@@ -55,9 +55,17 @@
     </form>
   </main>
 
-   <footer>
-    <p>&copy; <span id="currentyear"></span> Mirabel Nwanneka | Angola</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
+ <footer class="site-footer">
+  <p>&copy; 2025 ROMIRA Global | Mirabel Nwanneka</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+<script>
+  const modifiedSpan = document.getElementById("lastModified");
+  if (modifiedSpan) {
+    const lastModified = new Date(document.lastModified);
+    modifiedSpan.textContent = lastModified.toLocaleString();
+  }
+</script>
 </body>
 </html>
