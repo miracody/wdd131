@@ -1,0 +1,61 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+  Hook & Hustle
+
+2. What real-world problem will your program address or help to solve?
+  As a crochet business owner, I need a tool to help me manage my inventory, estimate project costs, and generate receipts for customer orders.
+  Currently, I track materials manually, 
+  which is time-consuming and error-prone. My program will automate these tasks and make my business more efficient and professional.
+
+3. What will you learn from developing this program?
+  function design: how to break down real world problem in crochet business.
+  testing with pytest: i will write automated test to verify logic.
+  data structuring: by working with dictionaries
+  error handling: i will writing codes to handle missing files.
+
+4. What Python modules will your program use?
+  datetime, pytest, math, random, i might use csv
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. List the names of functions you will need?
+    calculate_material_cost(materials_dict): Computes total material cost
+
+    estimate_labor_cost(hours, rate): Calculates labor cost based on time
+
+    generate_receipt(order_data): Formats and prints the receipt
+
+    apply_discount(code, total): Adjusts total based on discount code
+
+    test_calculate_material_cost(): Pytest function to verify material cost logic
+
+    test_estimate_labor_cost(): Pytest function to verify labor cost calculation
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+
+calculate_material_cost()
+
+estimate_labor_cost() These tests will use sample data to confirm that the functions return correct results.
+ I will also manually test the receipt output with different inputs to ensure formatting and totals are accurate.
