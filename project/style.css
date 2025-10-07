@@ -1,89 +1,122 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff8f0;
-  color: #333;
+/* styles.css */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
 .site-header {
-  background-color: #8e44ad;
+  background-color: #caa892;
   color: white;
-  padding: 1.5rem;
+  padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #732d91;
-}
-
-.site-footer {
-  background-color: #8e44ad;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-  border-top: 4px solid #732d91;
-}
-
-main {
-  padding: 2rem 1rem;
-}
-
-form {
-  max-width: 600px;
-  margin: auto;
-  background-color: #fdf6f0;
-  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
-label, legend {
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Form layout */
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
   display: block;
-  margin-top: 1rem;
-  font-weight: bold;
 }
 
-input, select, textarea {
+input[type="text"],
+input[type="date"],
+select,
+textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border-radius: 4px;
+  padding: 10px;
   border: 1px solid #ccc;
-}
-
-fieldset {
-  border: none;
-  margin-top: 1rem;
-}
-
-input[type="submit"] {
-  background-color: #8e44ad;
-  color: white;
-  border: none;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1rem;
 }
 
-input[type="submit"]:hover {
-  background-color: #732d91;
+textarea {
+  resize: vertical;
 }
 
-span {
-  font-size: 1.5rem;
-  color: #ccc;
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-input[type="radio"]:checked + span {
-  color: #f5b301;
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* Rating stars */
+fieldset label {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
-footer {
-  background-color: #732d91;
+fieldset span {
+  color: #caa892;
+}
+
+/* Checkbox layout */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #caa892;
   color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #b38a74;
+}
+
+/* Footer */
+.site-footer {
   text-align: center;
-  padding: 1rem;
+  margin-top: 40px;
   font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer span {
+  font-weight: bold;
 }
